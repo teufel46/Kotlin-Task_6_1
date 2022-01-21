@@ -14,7 +14,11 @@ data class Post(
     val reposts : Reposts,
     val views : Views,
     val postType : String,
+    val postSource : PostSource?, // источник записи
+    val attachments : Array<Attachment>? = emptyArray(),
+    val geo : Geo?, // информация о местоположении
     val signerId : Long,
+    val copyHistory : Array<Post>? = emptyArray(),
     val canPin : Boolean,
     val canDelete : Boolean,
     val canEdit : Boolean,

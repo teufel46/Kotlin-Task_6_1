@@ -23,7 +23,5 @@ object WallService {
         for (post in posts){
             println(post)
         }
-        println("  NextId=$nextId")
     }
-
 }
